@@ -166,7 +166,7 @@ const PersonalContactForm = () => {
                 {formData.dob === "" &&
                   navigator &&
                   /Mobi|Android/i.test(navigator.userAgent) && (
-                    <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm pointer-events-none">
+                    <div className="block w-full appearance-none px-3 py-1.5 text-base text-gray-900 placeholder:text-gray-400 bg-transparent focus:outline-none sm:text-sm">
                       dd/mm/yyyy
                     </div>
                   )}
