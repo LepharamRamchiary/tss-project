@@ -149,7 +149,7 @@ export default function EmploymentPreferencesForm() {
                 Preferences
               </label>
               <div className="rounded-lg border border-gray-300 overflow-x-auto">
-                <table className="w-full text-sm divide-y divide-gray-300">
+                <table className="w-full text-sm divide-y divide-gray-300 table-fixed">
                   <thead className="bg-gray-100">
                     <tr>
                       <th
@@ -160,25 +160,25 @@ export default function EmploymentPreferencesForm() {
                       </th>
                       <th
                         scope="col"
-                        className="px-2 py-2 font-medium text-gray-500 uppercase text-xs text-left"
+                        className="px-2 py-2 font-medium text-gray-500 uppercase text-xs text-left w-32 sm:w-auto"
                       >
                         Course Category
                       </th>
                       <th
                         scope="col"
-                        className="px-2 py-2 font-medium text-gray-500 uppercase text-xs text-left"
+                        className="px-2 py-2 font-medium text-gray-500 uppercase text-xs text-left w-32 sm:w-auto"
                       >
                         Sector
                       </th>
                       <th
                         scope="col"
-                        className="px-2 py-2 font-medium text-gray-500 uppercase text-xs text-left"
+                        className="px-2 py-2 font-medium text-gray-500 uppercase text-xs text-left w-32 sm:w-auto"
                       >
                         Course
                       </th>
                       <th
                         scope="col"
-                        className="px-2 py-2 font-medium text-gray-500 uppercase text-xs text-left"
+                        className="px-2 py-2 font-medium text-gray-500 uppercase text-xs text-left w-32 sm:w-auto"
                       >
                         District
                       </th>
@@ -196,7 +196,7 @@ export default function EmploymentPreferencesForm() {
                         <th scope="col" className="px-2 py-2">
                           {pref.id}
                         </th>
-                        <td scope="col" className="px-2 py-2">
+                        <td scope="col" className="px-2 py-2 break-words">
                           <div className="relative w-full has-[select:focus]:outline-2 has-[select:focus]:outline-emerald-400 has-[select:focus]:-outline-offset-2 outline outline-1 outline-gray-300 rounded-lg p-1 flex items-center">
                             <select
                               className="block w-full appearance-none px-3 py-1.5 pr-7 text-base text-gray-900 placeholder:text-gray-400 bg-transparent focus:outline-none sm:text-sm"
@@ -559,7 +559,6 @@ export default function EmploymentPreferencesForm() {
             onClick={handleNext}
             className="bg-black hover:bg-black/80 text-white font-medium rounded-full border-gray-300 px-4 py-2.5 text-sm mt-4 text-center disabled:bg-gray-200 disabled:text-gray-600"
           >
-            
             Next
           </button>
         </div>

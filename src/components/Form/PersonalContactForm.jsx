@@ -176,7 +176,7 @@ const PersonalContactForm = () => {
                   value={formData.dob}
                   onChange={handleChange}
                   placeholder="dd/mm/yyyy"
-                  className="block w-full appearance-none px-3 py-1.5 text-base text-gray-900 placeholder:text-gray-400 bg-transparent focus:outline-none sm:text-sm"
+                  className="block text-left w-full appearance-none px-3 py-1.5 text-base text-gray-900 placeholder:text-gray-400 bg-transparent focus:outline-none sm:text-sm"
                 />
               </div>
             </div>
