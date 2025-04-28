@@ -27,7 +27,6 @@ const PersonalContactForm = () => {
       setFormData(JSON.parse(savedData));
     }
   }, []);
-  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -164,12 +163,19 @@ const PersonalContactForm = () => {
                 Date of Birth
               </label>
               <div className="relative w-full outline outline-1 outline-gray-300 rounded-lg p-1 flex items-center focus-within:outline-2 focus-within:outline-emerald-400 focus-within:-outline-offset-2">
+                {formData.dob === "" &&
+                  navigator &&
+                  /Mobi|Android/i.test(navigator.userAgent) && (
+                    <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm pointer-events-none">
+                      dd/mm/yyyy
+                    </div>
+                  )}
                 <input
                   name="dob"
                   type="date"
                   value={formData.dob}
-                  placeholder="dd/mm/yyyy"
                   onChange={handleChange}
+                  placeholder="dd/mm/yyyy"
                   className="block w-full appearance-none px-3 py-1.5 text-base text-gray-900 placeholder:text-gray-400 bg-transparent focus:outline-none sm:text-sm"
                 />
               </div>
