@@ -53,6 +53,7 @@ export default function DeclStep() {
       // }
       alert("Data submitted successfully! ");
       // console.log("Submitted Data:", formData);
+      navigate("/")
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Failed to submit form. Please try again.");
