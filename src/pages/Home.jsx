@@ -3,8 +3,8 @@ import IdentityVerification from "../components/IdentityVerification";
 
 function Home() {
   return (
-    <div className="w-full min-h-screen bg-blue-50">
-      <div className="p-12">
+    <div className="w-full min-h-screen ">
+      <div className="sm:p-12 p-3 pt-16 sm:pt-0">
         <div className="flex flex-col gap-3">
           <h2 className="md:text-5xl lg:text-5xl sm:text-3xl text-2xl text-gray-950 font-medium font-roboto">
             Skill Training Registration

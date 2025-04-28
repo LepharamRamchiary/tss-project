@@ -27,6 +27,7 @@ const PersonalContactForm = () => {
       setFormData(JSON.parse(savedData));
     }
   }, []);
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -167,6 +168,7 @@ const PersonalContactForm = () => {
                   name="dob"
                   type="date"
                   value={formData.dob}
+                  placeholder="dd/mm/yyyy"
                   onChange={handleChange}
                   className="block w-full appearance-none px-3 py-1.5 text-base text-gray-900 placeholder:text-gray-400 bg-transparent focus:outline-none sm:text-sm"
                 />
